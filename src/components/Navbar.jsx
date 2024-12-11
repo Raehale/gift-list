@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
-import '../Navbar.css'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -11,7 +10,7 @@ const Navbar = () => {
 
   return (
     <header className="navbar">
-      <div className="navbar-brand">Wishlist</div>
+      <div className="navbar-name">Wishlist</div>
       <nav className={`navbar-menu ${isOpen ? 'open' : ''}`}>
         <ul className="navbar-list">
           <li className="navbar-item">Home</li>

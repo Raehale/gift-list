@@ -1,19 +1,19 @@
 import React from 'react'
 import items from '../giftData'
-import '../Hero.css'
 
 const Hero = () => {
-  return (
-    <ul>
-        {items.map((item, index) => (
-            <li key={index}>
-                <label>
-                    <input type="checkbox" /> {item}
-                </label>
-            </li>
-        ))}
-    </ul>
-  )
+  const renderItems = items.map(function(item, index) {
+    return (
+      <li key={index}>
+          <label>
+            <input type="checkbox" /> {item}
+          </label>
+      </li>
+    )
+  })
+
+  return <ul>{renderItems}</ul>
 }
+
 
 export default Hero

@@ -1,5 +1,4 @@
 import React from 'react'
-import '../Header.css'
 
 const Header = () => {
   return (
@@ -8,7 +7,7 @@ const Header = () => {
             <h1>My List</h1>
         </div>
         <div className="button-container">
-            <button type="button" className="btn">New Item</button>
+            <button type="button" className="btn" id="btn">New Item</button>
         </div>
     </div>
   )
