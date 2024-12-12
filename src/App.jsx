@@ -1,10 +1,19 @@
-import './App.css'
+import React from 'react'
+import Navbar from './components/Navbar'
+import Header from './components/Header'
+import Hero from './components/Hero'
 
-export default function App() {
 
+const App = () => {
   return (
     <>
-      Gift List
-    </>
+      <Navbar />
+      <main className="center-container">
+        <Header />
+        <Hero />
+      </main>   
+    </>    
   )
 }
+
+export default App
