@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { FaBars, FaTimes } from 'react-icons/fa'
+import { FaBars, FaTimes, } from 'react-icons/fa'
+import { BsGiftFill } from 'react-icons/bs'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -12,7 +13,8 @@ const Navbar = () => {
     <header className="navbar">
       <div className="navbar-name">Wishlist</div>
       <nav className={`navbar-menu ${isOpen ? 'open' : ''}`}>
-        <ul className="navbar-list">
+        <BsGiftFill size="40" className="navbar-logo" />
+        <ul className="navbar-ul-list">
           <li className="navbar-item">Home</li>
           <li className="navbar-item">About</li>
           <li className="navbar-item">Services</li>
@@ -20,7 +22,7 @@ const Navbar = () => {
         </ul>
       </nav>
       <div className="hamburger" onClick={toggleMenu}>
-        {isOpen ? <FaTimes /> : <FaBars />}
+        {isOpen ? <FaTimes size="25" /> : <FaBars size="25" />}
       </div>
     </header>
   )
